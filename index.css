@@ -1,0 +1,19 @@
+/*Este arquivo contem códigos CSS para customização da página
+html em estudo*/
+
+/*Define um Plano de Fundo para determinado elemento ou 
+página, por começar com um "." representa uma classe (class)*/
+.fundo  {
+                background: #b16a6a;
+        }
+/*Define a cor para um objeto, pelo nome atribuído entende-se
+por um elemnto ID por iniciar com "#",o quel define a cor 
+de outro elemento ao utilizá-lo na formatação do texto ou 
+elemento desejado*/
+#textoTeste {
+                color: blueviolet;
+            }
+/*Outro exemplo de um ID*/
+#textoCor {
+                color: yellow;
+            }
