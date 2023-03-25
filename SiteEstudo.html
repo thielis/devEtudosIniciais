@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Estudo Thielis</title>
+    <meta charset="utf-8">
+    <!--Podemos aplicar o CSS interno dentro do head-->
+    <style type="text/css">
+    .fundo  {
+                background: #c4e8fd;
+            }
+    .fundo2 {
+                background: aquamarine;
+            }
+    #textoTeste {
+                color: blueviolet;
+                }
+    </style>
+</head>
+
+<body class="fundo">
+<!--Define uma imagem para aparecer com o tamanho real da mesma-->
+<img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31">
+<br><!--Pula linha, como um "enter" no texto-->
+<!--Define uma imagem para aparecer porém com as dimensões definidas-->
+<img width="300" height="30" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31">
+<br><br>
+<!--Exemplos de tipos de títulos-->
+<!--Observe que o h1 foi utilizado um ID em CSS declarado
+no início lá no cabeçalho do html e class no h2, no h3
+temos a forma in line-->
+<h1 id="textoTeste">Teste do Titulo</h1>
+<h2 class="fundo2">Teste do Titulo</h2>
+<h3 style="color: coral; background: burlywood;">Teste do Titulo</h3>
+<h4>Teste do Titulo</h4>
+<h5>Teste do Titulo</h5>
+<h6>Teste do Titulo</h6>
+<br><br>
+<!--Nesta parte temos o paragrafo com CSS inline -->
+<p style="color: red">Texto escrito em html para teste</p> 
+<br><br>
+<!--Define um link e o texto que será exibido para em que clicando neste abrirá o link desejado  -->
+<a href="http://www.google.com.br"> Pesquisar no Google </a>
+<br><br>
+<a href="./siteEstudo_2.html"> Ir para outra página </a>
+<br><br>
+<fieldset><!--Define uma sessão ou campo com dados internos -->
+<legend>Inserir uma string</legend><!--Define o título do fieldset-->
+<!--Insere uma caixa para inserir informações e com atributo type 
+    define-se o tipo de informação que pode ser inserida -->
+<input type="text" placeholder="Insira a palavra aqui"><!--type está definido 
+    para texto e o placeholder mostra um texto com transparência dentro da caixa, 
+    utilizao para indicar a informação ou sugestão de inserção de dados-->
+</fieldset>
+<br>
+<fieldset>
+    <legend>Inserir ou selecionar um número</legend>
+<input type="number"><!--type está definido para numero -->
+</fieldset>
+<br>
+<fieldset>
+    <legend>Selecione o livro</legend>
+    <input type="checkbox" id="livro">
+    <label for="livro">Mafia dos Mendigos</label>
+    <br>
+    <input type="checkbox" id="livro">
+    <label for="livro">Ninja Gaiden</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Selecione o Sexo</legend>
+    <input type="radio" id="masculino" value="masculino" name="sexo">   
+    <label for="masculino">Masculino</label>
+    <br>
+    <input type="radio" id="feminino" value="feminino" name="sexo"    >
+    <label for="feminino">Feminino</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Clique do botão para exibir um alerta</legend>
+    <button type="button" onclick="alert('Clicado no botão de Alerta!')">Clique No botão</button>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Selecione o Dispositivo</legend>
+    <select><!--Cria uma caixa de seleção com as opções definidas abaixo-->
+        <option value="desktop">Computador</option>
+        <option value="notebook">Notebook</option>
+        <option value="celular" selected>Celular</opition> <!--deixa esse item pre selecionado-->
+        <option value="tablet">Tablet</opition>
+    </select>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Selecione os intens listados</legend>
+    <select multiple><!--permite selecionar varios itens listados-->
+        <option value="casa" selected>Casa</option><!--define este item como pre selecionado-->
+        <option value="apartamento">Apartamento</option>
+        <option value="hotel">Hotel</opition>
+        <option value="pousada">Pousada</opition>
+    </select>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Insira o Texto desejado</legend>
+    <textarea rows="10" cols="50" maxlength="500" >Texto inserido previamente, apague e digite o que desejar. Permitido até 500 caracteres.
+    </textarea>
+</fieldset>
+
+<p>
+    <b> Teste com tag "b" </b><br>
+    <strong> Teste com tag "Strong" - 
+        Faz o mesmo que a "b" porém quando utilizado em
+        ferramentas de acessibilidade (leitura por audio)
+        terá mais ênfase ao reproduzir o texto 
+    </strong><br>
+    <i> Teste com tag "i" </i><br>
+    <em> Teste com tag "em" - Faz o mesmo que a "i" porém quando utilizado em
+        ferramentas de acessibilidade (leitura por audio)
+        terá mais ênfase ao reproduzir o texto 
+    </em><br>
+</p><br>
+<p>
+    <section>
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li> Primeiro Item da lista </li>
+                    <ol>
+                        <li> Primeiro Subitem da lista </li>
+                    </ol>
+                <li> Segundo Item da lista </li>
+                <li> Terceiro Item da lista </li>
+            </ol>
+    </section>
+
+    <section>
+            <h3>Lista não ordenada</h3>
+            <ul>
+                <li> Primeiro Item da lista não ordenada </li>
+                    <ul>
+                        <li> Primeiro Subitem da lista não ordenada </li>
+                    </ul>
+                <li> Segundo Item da lista não ordenada </li>
+                <li> Terceiro Item da lista não ordenada </li>
+            </ul>
+    </section>
+
+    <section>        
+        <h3>Lista de definição</h3>
+        <dl>
+            <dt> Primeiro Item da lista não ordenada </dt>
+                <dd> Descrição do primeiro elemento </dd>
+            <dt> Segundo Item da lista não ordenada </dt>
+                <dd> Descrição do segundo elemento </dd>
+            <dt> Terceiro Item da lista não ordenada </dt>
+                <dd> Descrição do terceiro elemento </dd>
+        </dl>
+    </section>
+</p>
+
+<section>
+    <h3>Tabela Simples</h3>
+    <table border="1">
+        <tr>
+            <td>NOME</td>
+            <td>CIDADE</td>
+            <td>ESTADO</td>
+        </tr>
+        <tr>
+            <td>Thielis</td>
+            <td>Vila Velha</td>
+            <td>ES</td>
+        </tr>
+        <tr>
+            <td>Mylena</td>
+            <td>Teresopolis</td>
+            <td>RJ</td>
+        </tr>
+    </table>
+</section>
+<section>
+    <h3>Tabela Mais Elaborada</h3>
+    <table border="1">
+        <tr>
+            <th>NOME</th>
+            <th>CIDADE</th>
+            <th>ESTADO</th>
+        </tr>
+        <tr>
+            <td>Thielis</td>
+            <td>Vila Velha</td>
+            <td>ES</td>
+        </tr>
+        <tr>
+            <td>Mylena</td>
+            <td>Teresopolis</td>
+            <td>RJ</td>
+        </tr>
+    </table>
+</section>
+<br><br>
+<video width="800" height="600" src="./trex_desgraca.mp4" controls> teste do video </video>
+<br><br>
+<audio src="./chinese_relax.mp3" controls autoplay loop> teste do audio </audio>
+<br><br>
+<script> /* define que o conteúdo é um código de javascrip
+muito utilizado quando criado em um bloco de notas comum */
+
+//imprimindo no console
+console.log ("Hello World");
+
+//gerando alerta no navegador
+alert("Alerta via JavaScript!");
+</script> 
+</body>
+<footer>
+    Mensagens de rodapé Ex: Desenvolvido por Fulano.
+</footer>
+</html>
